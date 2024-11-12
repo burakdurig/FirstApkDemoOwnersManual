@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/Nissan_QR_Code"
+        android:layout_width="290dp"
+        android:layout_height="265dp"
+        android:src="@drawable/qrcode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nissan_Own_Location"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <TextView
+        android:id="@+id/Nissan_Own_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="To access Owners Manual Scan QR code, \n or enter the following html:\nhttps://www.nissanusa.com/owners/ownership/manuals-guides.html"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back_own"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="homesScreen"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/easteregg"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:onClick="easterEgg"
+        android:text="Don't Press"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
